@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes turnAndSun {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.5);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+        opacity: 1;
+    }
+}
+
+.turnAndSun {
+    bottom: 66px;
+    position: relative;
+    animation: turnAndSun 3s linear infinite;
+}
+
+body {
+    background-image: url("https://cimetiere-montparnasse.com/wp-content/uploads/tombe-henri-poincare-visage.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
